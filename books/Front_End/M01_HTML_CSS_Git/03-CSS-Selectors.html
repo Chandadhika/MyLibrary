@@ -1,57 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Recordings</title>
-    <link rel="stylesheet" href="../../../css/recording.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./M01/assets/css/Selectstyle.css">
+    <title>CSS Selectors</title>
   </head>
+
   <body>
     <header>
-      <h1>My Recordings</h1>
+      <h1>chandadhika Bio</h1>
     </header>
 
     <main>
-      <div class="video-player">
-        <video id="main-video" controls>
-          <source
-            src="../../../recordings/SampleVideo_1280x720_20mb.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <section>
+        <h2>About Me</h2>
+        <figure>
+          <img src="./M01/images/01.jpeg" alt="placeholder image with text reading 200 width 200 height"/>
+          <figcaption>chandadhika Image</figcaption>
+        </figure>
+        <p class="highlighted-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </section>
 
-      <div class="video-list">
-        <div
-          class="video-thumbnail"
-          data-video-src="../../../recordings/SampleVideo_1280x720_20mb.mp4"
-        >
-          <!-- <img src="../../../images/plant2.png" alt="Video 2" /> -->
-          <p>Video 1</p>
-        </div>
-        <div
-          class="video-thumbnail"
-          data-video-src="../../../recordings/SampleVideo_1280x720_5mb.mp4"
-        >
-          <!-- <img src="../../../images/plant2.png" alt="Video 2" /> -->
-          <p>Video 2</p>
-        </div>
-        <div
-          class="video-thumbnail"
-          data-video-src="../../../recordings/SampleVideo_1280x720_1mb.mp4"
-        >
-          <!-- <img src="../../../images/plant2.png" alt="Video 2" /> -->
-          <p>Video 3</p>
-        </div>
-        <!-- <div class="video-thumbnail" data-video-src="video2.mp4">
-          <img src="../../../images/plant2.png" alt="Video 2" />
-          <p>Video 4</p>
-        </div> -->
-        <!-- Add more thumbnails as needed -->
-      </div>
+      <section id="contact-section">
+        <h2>Contact Information</h2>
+        <ul class="highlighted-text">
+          <li id="email"><strong>Email:</strong> <a href="#mailto:sandardika2015@gmail.com">Contact-me-email</a></li>
+        <li id="github"><strong>GitHub:</strong> <a href="#">Contact-me-github</a></li>
+        <li id="portfolio"><strong>Portfolio:</strong> <a href="#https://chandadhika.github.io/myPortfolio/">Contact-me-portfolio</a></li>
+        </ul>
+        <br>
+      </section>
     </main>
 
-    <script src="../../../js/recording.js"></script>
+    <footer>
+      <p>© 2023 Student Bio Productions</p>
+    </footer>
   </body>
+
 </html>
