@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(214, 214, 204);
+}
+
+/* header style start */
+header {
+    background-color: rgb(128, 128, 192);
+    padding: 20px 35px;
+    color: white;
+    background-position: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 35px;
+    color: beige;
+    margin: 0;
+    text-shadow: 0 0 10px rgb(67, 44, 44);
+}
+
+header a {
+    text-decoration-line: none;
+    text-decoration: none;
+    color: rgb(240, 213, 6);
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 7px 0;
+    
+}
+
+header nav ul li {
+    display: inline;
+    text-align: center;
+}
+
+header nav ul li a {
+    margin: 10px 15px;
+    font-weight: lighter;
+    font-size: 2vw;
+    padding: 10px 15px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background-color: blueviolet;
+    color: rgb(247, 150, 6);
+    border-radius: 10px;
+    text-shadow: none;
+}
+/* header style end */
+
+.hero {
+    height: 800%;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(./assets/images/icode.jpeg);
+    background-size: cover;
+    display: inline-block;
+    align-items: center;
+    background-position: 80%;   
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Contact-img {
+    max-height: 400px;
+    margin: 25px;
+    padding: 25px;
+    padding: 0.5px 0 0 1.5px;
+    border: 7px solid rgba(248, 6, 143, 0.335);
+    border-radius: 35px;
+    box-shadow: 4px 5px 5px #1e0101;
+} 
+
+
+.port .content p {
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(19, 14, 14);
+    margin: 10px;
+    margin-top: -40px;
+    padding: 20px;
+    width: 60%;
+}
+
+.port .content p span {
+    margin: 15px;
+    line-height: 2.5em;
+    padding: 15px;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(2, 39, 202);
+    text-shadow: 3px 5px 5px rgb(112, 2, 2);
+    text-decoration-line: underline;
+}
+
+
+main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h2 {
+    font-size: 35px;
+    color: #f7f7fa;
+    text-shadow: 3px 3px 7px #620202;
+    margin: 35px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: rgb(241, 22, 22);
+}
+
+.assignment {
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+    margin: 25px;
+    padding: 25px;
+}
+.assignments span {
+    text-align: center;
+    color: #b103ba;
+    font-style: italic;
+    font-size: 27px;
+    font-weight: bold;
+    display: block;
+}
+
+
+.port {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+}
+.port img {
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+    text-align: center;
+}
+
+.port img:hover {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #b103ba;
+}
+
+.run {
+    display: inline-block;
+    text-align: center;
+}
+
+.jpeg {
+    border: 5px solid rgb(7, 178, 226);
+    border-radius: 25px;
+}
+
+.public {
+    margin-bottom: 20px;
+    padding: 30px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.public h2 {
+    font-size: 30px;
+    color: #620202;
+    text-shadow: 2px 10px 10px rgb(46, 40, 40);
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+#email a, 
+#github a, 
+#portfolio a {
+    color: rgba(215, 62, 6, 0.952);
+    font-size: 25px;
+    text-decoration: none;
+    text-shadow: 3px 5px 7px #210505;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#email a:hover {
+    color: rgb(10, 36, 36);
+}
+
+#github a:hover {
+    color: rgb(1, 9, 9);
+}
+
+#portfolio a:hover {
+    color: rgb(1, 11, 11);
+}
+
+footer {
+    color: white;
+    background-color: rgb(85, 85, 239);
+    font-size: 1.5rem;
+    font-style: oblique;
+    display: inline-block;
+    flex-direction: column;
+    width: 100%; 
+}
+
+footer p:first-child{
+    color: rgb(252, 250, 250);
+    display: inline-block;
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 50px;
+    font-weight: bold;
+    text-shadow: 5px 2px 5px rgb(247, 150, 6);
+}
+
+footer p:last-child{
+    color: rgb(239, 247, 12);
+    display: inline;
+    float: right;
+    padding: 10px;
+    padding-right: 50px;
+    text-shadow: 2px 2px 0 rgb(241, 22, 22);
+}
+
