@@ -66,7 +66,7 @@ header nav ul li a:hover {
     height: 800%;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url(./assets/images/icode.jpeg);
+    background-image: url(../../../../M02/assets/images/Challimages/icode.jpeg);
     background-size: cover;
     display: inline-block;
     align-items: center;
@@ -94,7 +94,7 @@ header nav ul li a:hover {
 .port .content p {
     font-size: 20px;
     font-style: italic;
-    color: rgb(19, 14, 14);
+    color: rgb(246, 241, 241);
     margin: 10px;
     margin-top: -40px;
     padding: 20px;
@@ -107,7 +107,7 @@ header nav ul li a:hover {
     padding: 15px;
     font-size: 35px;
     font-weight: bold;
-    color: rgb(2, 39, 202);
+    color: rgb(208, 194, 4);
     text-shadow: 3px 5px 5px rgb(112, 2, 2);
     text-decoration-line: underline;
 }
