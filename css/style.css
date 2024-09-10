@@ -171,6 +171,22 @@ footer a {
   margin: 10px auto;
 }
 
+/* Read more */
+.more-text {
+  display: none; /* Initially hidden */
+}
+.read-more-btn {
+  background-color: #64968C;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 5px;
+} 
+
 /* Tooltips */
 .tikamatika span {
   margin-left: 5%;

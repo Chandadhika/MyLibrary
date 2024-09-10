@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       အင်္ဂုတ္တိုရ်: ["lesson.html", "recording.html", "quiz.html"],
       မဟာဝါ: ["lesson.html", "recording.html", "quiz.html"]
     },
+
     Front_End: {
       M01_HTML_CSS_Git: [
         "01-HTML.html",
@@ -104,6 +105,18 @@ document.addEventListener("DOMContentLoaded", () => {
         "projectQuiz.html",
       ],
     },
+  };
+
+  // Read more
+  function toggleReadMore(btn) {
+    const moreText = btn.previousElementSibling.querySelector('.more-text');
+    if (moreText.style.display === "none") {
+      moreText.style.display = "inline";
+      btn.textContent = "Read Less";
+    } else {
+      moreText.style.display = "none";
+      btn.textContent = "Read More";
+    }
   };
 
   function loadBooks() {
