@@ -107,18 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   };
 
-  // Read more
-  function toggleReadMore(btn) {
-    const moreText = btn.previousElementSibling.querySelector('.more-text');
-    if (moreText.style.display === "none") {
-      moreText.style.display = "inline";
-      btn.textContent = "Read Less";
-    } else {
-      moreText.style.display = "none";
-      btn.textContent = "Read More";
-    }
-  };
-
   function loadBooks() {
     Object.keys(folderStructure).forEach((book) => {
       const bookElement = document.createElement("div");
@@ -270,6 +258,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   loadBooks();
 });
+
+// Read more
+function toggleReadMore(btn) {
+  const moreText = btn.previousElementSibling.querySelector('.more-text');
+  if (moreText.style.display === "none") {
+    moreText.style.display = "inline";
+    btn.textContent = "Read Less";
+  } else {
+    moreText.style.display = "none";
+    btn.textContent = "Read More";
+  }
+};
 
 /*
 document.addEventListener("DOMContentLoaded", () => {
