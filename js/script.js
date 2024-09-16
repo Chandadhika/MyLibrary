@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   const bookList = document.getElementById("bookList");
   const fileDisplay = document.getElementById("fileDisplay");
-  const MAX_FILES = 2;
+  const MAX_FILES = 1;
 
   const folderStructure = {
     မူလတန်း: {
       Grammar: ["lesson.html", "recording.html", "quiz.html"],
-      Sangaha: ["ညဝါ.html", "recording.html", "quiz.html"],
+      Sangaha: ["ညဝါ.html", "recording.html", "./Quiz/quiz-0.html", "./Quiz/quiz-1.html", "./Quiz/quiz-2.html"],
       Readings: ["lesson.html", "recording.html", "quiz.html"],
     },
     သီလက္ခန်: {

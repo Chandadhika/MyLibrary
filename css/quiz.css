@@ -10,11 +10,11 @@
 body {
   font-family: Arial, sans-serif;
   background-color: var(--primary-bg-color);
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-  /* height: 100vh; */
+  align-items: center; */
   margin: 0;
+  /* height: 70vh; */
 }
 
 #start-container {
@@ -24,7 +24,7 @@ body {
   border-radius: 10px;
   text-align: center;
   margin: 5% auto;
-  height: auto;
+  /* height: auto; */
 }
 
 #start-container h2 {
