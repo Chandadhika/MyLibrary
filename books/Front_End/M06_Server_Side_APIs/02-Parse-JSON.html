@@ -3,55 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz with Timer</title>
-    <link rel="stylesheet" href="../../../css/quiz.css" />
+    <title>Parsing JSON</title>
+    <link rel="stylesheet" type="text/css" href="./M06/assets/css/Parsestyle.css" />
   </head>
-  <body>
-    <div id="start-container">
-      <h2>Welcome to the Quiz!</h2>
-      <input
-        type="text"
-        id="username"
-        placeholder="Enter your name"
-        onfocus="clearPlaceholder(this)"
-      />
-      <button onclick="startQuiz()">Start Quiz</button>
-    </div>
-
-    <div class="quiz-container" id="quiz-container" style="display: none">
-      <div id="timer">Time Left: <span id="time">36</span> seconds</div>
-      <div id="question"></div>
-      <div class="options"></div>
-      <button id="next-question" onclick="checkAnswer()">Submit</button>
-      <div id="feedback"></div>
-    </div>
-
-    <div id="result-container" style="display: none">
-      <h2>Quiz Result</h2>
-      <div id="result"></div>
-      <button id="test-again" onclick="testAgain()">Test Again</button>
-    </div>
-
-    <!-- Store questions in a script tag with type="application/json" -->
-  <script id="questions-data" type="application/json">
-    [
-      {
-        "question": "What is the capital of France?",
-        "options": ["Paris", "Berlin", "Rome", "Madrid"],
-        "answer": "Paris"
-      },
-      {
-        "question": "Which planet is known as the Red Planet?",
-        "options": ["Mars", "Earth", "Jupiter", "Saturn"],
-        "answer": "Mars"
-      },
-      {
-        "question": "What is the largest ocean on Earth?",
-        "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-        "answer": "Pacific Ocean"
-      }
-    ]
-  </script>
-    <script src="../../../js/quiz.js"></script>
+  <body class="min-100-vh flex-column">
+    <header class="p-5 text-center text-white bg-primary">
+      <h1>Server-Side APIs</h1>
+    </header>
+    <main class="flex-row justify-center align-center col-auto p-4 bg-light">
+      <section class="card card-rounded col-7 bg-white">
+        <header class="card-header text-center">
+          <h2 class="text-white">
+            Parsing JSON
+          </h2>
+        </header>
+        <div class="p-3">
+          <p class="card-body">
+            Make a request to get 5 GitHub issues associated with Twitter's
+            Chill repo.
+            <br />
+            Loop through the response and console log each issue's URL and
+            user's login.
+          </p>
+        </div>
+        <footer class="card-footer text-center">
+          Open the console in your browser to see the responses!
+        </footer>
+      </section>
+    </main>
+    <script src="./M06/assets/js/Parsescript.js"></script>
   </body>
 </html>
