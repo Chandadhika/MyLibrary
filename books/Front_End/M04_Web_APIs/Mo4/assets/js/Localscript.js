@@ -16,6 +16,6 @@ signUpButton.addEventListener("click", function(event) {
 
   // set new submission to local storage 
   localStorage.setItem("user", JSON.stringify(user));
-  // localStorage.getItem("user", JSON.parse(user)); ပြန်ခေါ်သုံးတာ
-  // localStorage.removeItem("user", JSON.stringify(user)); ဖျက်ပစ်တာ
+  localStorage.getItem("user", JSON.parse(user)); //ပြန်ခေါ်သုံးတာ
+  localStorage.removeItem("user", JSON.stringify(user)); //ဖျက်ပစ်တာ
 });
